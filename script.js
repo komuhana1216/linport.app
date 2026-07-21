@@ -76,3 +76,37 @@ canvas.width=innerWidth;
 canvas.height=innerHeight;
 
 });
+
+const tabs = document.querySelectorAll(".tab");
+const cards = document.querySelectorAll(".btn");
+
+tabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        const filter = tab.dataset.filter;
+
+        cards.forEach(card => {
+
+            if (filter === "all") {
+
+                card.style.display = "flex";
+
+            } else if (card.classList.contains(filter)) {
+
+                card.style.display = "flex";
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
