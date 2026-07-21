@@ -15,17 +15,6 @@ btn.style.transform="translateY(0px)";
 
 });
 
-// カードを少し動かす
-document.addEventListener("mousemove",(e)=>{
-
-const x=(window.innerWidth/2-e.clientX)/50;
-const y=(window.innerHeight/2-e.clientY)/50;
-
-document.querySelector(".container").style.transform=
-`rotateY(${x}deg) rotateX(${-y}deg)`;
-
-});
-
 const canvas=document.getElementById("particles");
 const ctx=canvas.getContext("2d");
 
