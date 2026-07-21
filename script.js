@@ -110,24 +110,3 @@ tabs.forEach(tab => {
     });
 
 });
-
-const indicator = document.querySelector(".tab-indicator");
-
-function moveIndicator(tab){
-
-    indicator.style.width = tab.offsetWidth + "px";
-    indicator.style.left = tab.offsetLeft + "px";
-
-}
-
-moveIndicator(document.querySelector(".tab.active"));
-
-tabs.forEach(tab=>{
-
-    tab.addEventListener("click",()=>{
-
-        moveIndicator(tab);
-
-    });
-
-});
