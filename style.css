@@ -367,3 +367,17 @@ opacity:0;
 }
 
 }
+
+.category{
+    margin:35px 0 15px;
+    padding-bottom:8px;
+
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+
+    color:#6ca8ff;
+    text-align:left;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+}
