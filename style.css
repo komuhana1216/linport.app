@@ -607,15 +607,12 @@ transform:translateX(var(--right));
 =========================== */
 
 .slider{
+
     width:100%;
-    max-width:500px;
-    height:280px;
-    margin:40px auto;
+    max-width:520px;
+    height:300px;
+    margin:40px 0; 
 
-    position:relative;
-    overflow:hidden;
-
-    border-radius:20px;
 }
 
 .slide{
