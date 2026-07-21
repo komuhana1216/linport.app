@@ -448,10 +448,12 @@ box-shadow:0 0 20px #2b63ff;
 .layout{
 
     display:grid;
-    grid-template-columns:340px 1fr;  ← これ！
+
+    grid-template-columns:340px 1fr;
+
     gap:80px;
 
-}
+    align-items:start;
 
 }
 
@@ -606,24 +608,20 @@ transform:translateX(var(--right));
 =========================== */
 
 .slider{
-    width:100%;
-    max-width:500px; 
-    height:280px;    
-    margin:40px auto;
 
     position:relative;
+
+    width:100%;
+
+    margin-top:40px;
+
+    aspect-ratio:16/9;
+
     overflow:hidden;
 
     border-radius:20px;
-}
 
-@media (min-width:1024px){
-
-.slider{
-
-    height:380px;
-
-}
+    border:1px solid rgba(255,255,255,.1);
 
 }
 
