@@ -506,3 +506,33 @@ flex-direction:column;
 gap:18px;
 
 }
+
+/* ===========================
+   PC 左右レイアウト
+=========================== */
+
+@media (min-width:1024px){
+
+:root{
+
+--left:-180px;
+--right:220px;
+
+}
+
+.profile,
+h1,
+.sub,
+.tabs{
+
+transform:translateX(var(--left));
+
+}
+
+.links{
+
+transform:translateX(var(--right));
+
+}
+
+}
