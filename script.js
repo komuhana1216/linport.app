@@ -111,18 +111,6 @@ tabs.forEach(tab => {
 
 });
 
-dots.forEach((dot,index)=>{
-
-dot.onclick=()=>{
-
-current=index;
-
-showSlide(current);
-
-}
-
-});
-
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 
