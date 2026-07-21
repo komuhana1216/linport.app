@@ -602,3 +602,89 @@ transform:translateX(var(--right));
     transform:scale(1.05);
 
 }
+
+/* ===========================
+   画像スライド
+=========================== */
+
+.slider{
+
+    position:relative;
+
+    width:100%;
+
+    margin-top:40px;
+
+    aspect-ratio:16/9;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+.slide{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    transition:.6s;
+
+    pointer-events:none;
+
+}
+
+.slide.active{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+.slide img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.dots{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+margin-top:15px;
+
+}
+
+.dot{
+
+width:10px;
+height:10px;
+
+border-radius:50%;
+
+background:#666;
+
+transition:.3s;
+
+}
+
+.dot.active{
+
+background:#4d7fff;
+
+transform:scale(1.3);
+
+}
