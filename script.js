@@ -110,3 +110,15 @@ tabs.forEach(tab => {
     });
 
 });
+
+dots.forEach((dot,index)=>{
+
+dot.onclick=()=>{
+
+current=index;
+
+showSlide(current);
+
+}
+
+});
