@@ -609,9 +609,17 @@ transform:translateX(var(--right));
 .slider{
 
     width:100%;
-    max-width:520px;
-    height:300px;
-    margin:40px 0; 
+    height:220px;
+
+}
+
+@media (min-width:1024px){
+
+.slider{
+
+    height:380px;
+
+}
 
 }
 
