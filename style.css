@@ -429,3 +429,80 @@ background:#2b63ff;
 box-shadow:0 0 20px #2b63ff;
 
 }
+
+/* ===========================
+   PCレイアウト
+=========================== */
+
+.layout{
+
+    width:min(1200px,92%);
+    margin:auto;
+
+}
+
+/* PCだけ */
+
+@media(min-width:900px){
+
+.layout{
+
+    display:grid;
+
+    grid-template-columns:340px 1fr;
+
+    gap:80px;
+
+    align-items:start;
+
+}
+
+/* 左固定 */
+
+.sidebar{
+
+    position:sticky;
+
+    top:70px;
+
+    height:fit-content;
+
+}
+
+/* 右 */
+
+.content{
+
+    min-height:100vh;
+
+}
+
+}
+
+.tabs{
+
+display:flex;
+flex-wrap:wrap;
+
+justify-content:flex-start;
+
+gap:10px;
+
+margin-top:40px;
+
+}
+
+.sidebar{
+
+text-align:left;
+
+}
+
+.links{
+
+display:flex;
+flex-direction:column;
+
+gap:18px;
+
+}
